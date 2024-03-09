@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family:Fjalla One ;
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    width: 100%;
+    height: auto;
+}
+header nav{
+   display: flex;
+   flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 30px;
+    margin: 0;
+}
+ ul{
+    display: flex;
+ }
+    
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin: 0 20px;
+}
+
+li a:hover {
+  
+   text-decoration: none;
+    font-size: 18px;
+   color: rgb(204, 192, 192);
+   transition: all .5s ease-in-out;
+
+   
+}
+#toggle {
+    display: none;
+}
+
+.logo img{
+    width:350px;
+  
+}
+.mini img{
+    display: none;
+}
+.conteneur{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video{
+    position:absolute ;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+@media (min-aspect-ratio:16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ration:16/9){
+    .video{
+      width:auto;
+      height:100%;
+    }
+}
+.btn{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+    height: 40vh;
+}
+ .btn button
+ {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+ }
+ .btn button:hover{
+    transform: translateY(10%);
+    transition: all .3s ease-in-out;
+   
+ }
+.btn p {
+    width: 70%;
+    text-align: center;
+    color: rgb(222, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+#monlogo{
+    background-color: white;
+    width:auto;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+#monlogo img{
+    height: 200px;
+    justify-content: center;
+    align-items: center;  
+}
+.proposition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top:100px;
+}
+.proposition p{
+    font-size: 27px;;
+}
+.allbox1{
+    padding-top:40px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.box1 img{
+    height: 400px;
+}
+.box2{
+    line-height: 25px;
+}
+.box2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+
+}
+.box4 p{
+    font-family: Arial, Helvetica, sans-serif;
+     font-size:18px;
+}
+.allbox2{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.box3 img{
+    height: 300px;
+    padding-top: 75px;
+}
+.box4{
+    line-height: 25px;
+}
+#propos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 100px;
+    align-items: center;
+}
+.maphoto {
+    height: 450px;
+   justify-content: center;
+   
+}
+.pphoto{
+    align-items: center;
+    justify-content: center;
+    font-size:18px;
+    line-height: 35px;
+}
+.allcontat #Contact a{
+    display: block;
+    padding-top: 25px;    
+}
+#Contact {
+padding: 75px; 
+width: 100px;  
+
+}
+
+.allcontat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.allcontat #Contact a img{
+    height: 75px;
+    display: block;
+     
+}
+
+
+.real p{
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+   
+}
+#realisation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    height: 700px;
+    width: auto;
+}
+
+
+.nekh {
+	position: relative;
+	display: block;
+	width:50%;
+	height: 500px;
+	overflow: hidden;
+	border-radius: 15px;
+    margin-top:90px;
+}
+
+.nekh:before, .nekh:after {
+	content: '<';
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+.nekh:after:after {
+	content: '>';
+	left: auto;
+	right: 1rem;
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+input {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+    margin:10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:after {
+	content: attr(title);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(0,0,0,0.0);
+	color: white;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+input:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 50%;
+	left: calc(-100% + 1rem);
+}
+input:checked:before {
+	display: none;
+	left: 1rem;
+}
+
+input:checked {
+	transform: translateX(0);
+	z-index: 0;
+	box-shadow: -5px 10px 20px -15px rgba(0,0,0,0);
+}
+
+input:checked + input:before {
+	left: -3rem;
+}
+
+input:checked + input ~ input:before {
+	display: none;
+}
+.copy{
+    background-color: white;
+    color:black;
+    padding: 25px;
+    text-align: center;
+}
+@media screen and (max-width:900px) {
+    ul{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    ul.active{
+        top: 0;
+        z-index: 2;
+        margin: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        opacity: 1;
+        transform: translateX(0);
+        transition: all .5s ease-in-out;
+
+    }
+    ul li {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 20vh;
+        margin-top: 10px;
+        
+    }
+    li a:hover{
+        padding: 0;
+    }
+    #toggle{
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 25px;
+        right: 20px;
+        
+    }
+     .bi-list{
+        font-size: 30px;
+        cursor: pointer;
+    }
+     .logo{
+        display: none;
+       
+     }
+     .mini img{
+        width:90px ;
+        position: absolute;
+        z-index: 3;
+        top: 20px;
+        left: 10px;
+        display: block;
+        
+     }
+     .btn{
+        top: 25%;
+        justify-content: space-around;
+        height: 85%;
+     }
+    .btn p{
+        font-size:25px;
+       
+    }
+    .video{
+        width: 100%;
+    }
+    #monlogo{
+        width: 100%;
+    }
+    h1{
+        font-size: 20px;
+        padding-bottom:20px;
+    }
+    .proposition p{
+        font-size:20px;
+
+    }
+    .box2{
+        font-size:18px;
+         padding:0 75px;
+    }
+    .box3{
+        padding-top: 125px;
+    }
+    .box4{
+        font-size:18px;
+        padding:0 75px;
+    }
+    .allbox2{
+        height: 800px;;
+    }
+    .pphoto p{
+        font-size:20px;
+    }
+
+    .allcontat{
+        flex-direction:column;
+
+    }
+    .allcontat img{
+        height:400px;
+        width:auto;
+        margin: 0;
+        padding:0;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .allcontat #Contact{
+        height: 105px;
+        width: 100%;
+        flex-direction:row;
+        display:inline-flex;
+        align-items:center;
+        padding-left:30%;
+    }
+}
+@media screen and (max-width:769px) {
+    *{
+        right:0;
+    }
+    header{
+        flex-direction: column;
+    }
+    .video{
+        width: 100%;
+    }
+    #monlogo{
+        width:100%;
+        padding-bottom: 30px;
+    }
+   .conteneur{
+    height:1000px;
+    
+   }
+    h1{
+        font-size: 20px;
+        padding-top: 300px;
+        padding-bottom:50px;
+        text-align: center;
+    }
+    .proposition p{
+        font-size:20px;
+
+    }
+    .box2{
+        font-size:15px;
+        padding: 0 75px;
+    }
+    .box3{
+        padding-top: 125px;
+    }
+    .box3 img{
+        padding-top:300px;
+    }
+    .box4{
+        font-size:15px;
+        padding: 0 75px;
+        padding-bottom: 75px;
+    }
+    .allbox2{
+        height: 1500px;
+    }
+    .pphoto p{
+        font-size:18px;
+    }
+    .maphoto{
+        width: 100%;
+        height: auto;
+    }
+
+    .allcontat{
+        flex-direction:column;
+        width: 100%;
+
+    }
+    .allcontat img{
+        height:300px;
+        width:auto;
+        margin:0;
+        padding:0;
+        justify-content: center;
+        align-items: center;
+    }
+    .allcontat #Contact{
+        height: 105px;
+        width: 60%;
+        justify-content: center;
+        flex-direction:row;
+        display:inline-flex;
+        align-items:center ;
+        padding-left: 40px;
+     
+     }
+     .allcontat #contact a {
+        width: 15px;
+     }
+     .realisation {
+        height:500px;
+        width: 250px;
+        background-color: white;
+     }
+     .real p{
+        font-size:20px;
+     }
+}
